@@ -29,7 +29,6 @@ class _NotesPageState extends State<NotesPage> {
     showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              title: const Text('Create a note'),
               backgroundColor: Theme.of(context).colorScheme.surface,
               content: TextField(controller: textController),
               actions: [

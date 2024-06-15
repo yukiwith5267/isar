@@ -13,7 +13,6 @@ class SettingsPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Theme.of(context).colorScheme.surface,
-        title: const Text('Settings'),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -24,10 +23,7 @@ class SettingsPage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('Settings',
-                style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                      color: Theme.of(context).colorScheme.primary,
-                    )),
+            Text('Theme'),
             CupertinoSwitch(
                 value: Provider.of<ThemeProvider>(context, listen: false)
                     .isDarkMode,

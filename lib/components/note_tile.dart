@@ -28,6 +28,7 @@ class NoteTile extends StatelessWidget {
                       width: 100,
                       height: 100,
                       context: context,
+                      backgroundColor: Theme.of(context).colorScheme.surface,
                       bodyBuilder: (context) => NoteSettings(
                           onEditTap: onEditPressed!,
                           onDeleteTap: onDeletePressed!),
