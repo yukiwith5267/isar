@@ -11,7 +11,10 @@ class NoteSettings extends StatelessWidget {
     return Column(
       children: [
         GestureDetector(
-          onTap: onEditTap,
+          onTap: () {
+            onEditTap();
+            Navigator.of(context).pop();
+          },
           child: const SizedBox(
             height: 50,
             width: 50,
@@ -19,7 +22,10 @@ class NoteSettings extends StatelessWidget {
           ),
         ),
         GestureDetector(
-          onTap: onDeleteTap,
+          onTap: () {
+            onDeleteTap();
+            Navigator.of(context).pop();
+          },
           child: const SizedBox(
             height: 50,
             width: 50,
